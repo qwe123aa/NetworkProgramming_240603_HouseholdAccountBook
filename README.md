@@ -43,7 +43,19 @@
       3. python manage.py createsuperuser
    3. views
       1. CategoryListView
+      2. AccountbookListView
+      3. AccountbookCreateView
+      4. AccountbookUpdateView
+      5. AccoundtbookDeleteView
    4. templates
       1. category_list.html
+      2. accountbook_list.html
+      3. accountbook_create.html
+      4. accountbook_update.html
+      5. accountbook_confirm_delete.html
    5. urls
       1. accountbook:category_list
+      2. accountbook:accountbook_list
+      3. accountbook:accountbook_create
+      4. accountbook:accountbook_update
+      5. accountbook:accountbook_delete

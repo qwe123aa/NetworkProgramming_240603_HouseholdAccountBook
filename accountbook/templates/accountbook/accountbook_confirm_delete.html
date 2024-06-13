@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Accountbook Update{% endblock %}
+
+{% block content %}
+
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ accountbook }} 진짜 지울까요? <br>
+        <input type="submit" value="Delete">
+        <input type="button" value = "Cancel" onclick="history.back()">
+    </form>
+{% endblock %}
