@@ -57,6 +57,7 @@
       6. accountbook_dashboard.html
          1. humanize
          2. reset.css, nav.css, dashboard.css
+         3. calendar.js, calendar.js
    5. urls
       1. accountbook:category_list
       2. accountbook:accountbook_list
