@@ -26,3 +26,10 @@ class AccountbookUpdateView(UpdateView):
 class AccountbookDeleteView(DeleteView):
     model = AccountBook
     success_url = reverse_lazy('accountbook:accountbook_list')
+
+def dashboard_accountbook(request) :
+    accountbook_list = AccountBook.objects.all() #all() : 전체, filter() : 필터, get() : 하나, none() : 안가져옴
+    context = {
+        'accountbook_list' : accountbook_list,
+    }
+    return render(request, 'accountbook/accountbook_dashboard.html', context=context)
